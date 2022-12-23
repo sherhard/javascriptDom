@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<img src="team/member01-k.jpg" alt="" id="src">
+	<input type="button" value="нажми на меня поменять фото"onclick="fun()">
+	
+
+
+	<script type="text/javascript">
+
+			function fun(){
+			let valu=document.getElementById('src');
+			valu.src=src.src='team/member02-k.jpg';
+			
+			}
+
+
+
+	</script>
+
+
+</body>
+</html>
