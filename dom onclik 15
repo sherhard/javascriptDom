@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<input type="text" name="" id="text" value="hello ">
+	<input type="button"  value="on click " name="" onclick="fun()">
+
+
+	<script type="text/javascript">
+
+		function fun() {
+			let text=document.getElementById('text');
+			text.style.color='green';
+			text.style.background='black';
+			text.style.width='1000px';
+			text.style.height='200px';
+			text.value='опа я поменял текст ';
+		}		
+
+
+
+	</script>
+		
+
+
+</body>
+</html>
