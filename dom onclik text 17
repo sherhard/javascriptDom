@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<style>
+	#carusel_02{
+		display: none;
+	}
+</style>
+<body>
+
+	<div class="carusel">
+				<div class="carusel_text" id="carusel_01">
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores..</p>
+				</div>
+				<div class="carusel_text" id="carusel_02">
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit 02.</p>
+				</div>
+				<div class="carusel_btn">
+				<input type="button" value="предыдущий" onclick="prev()">
+				<input type="button" value="следующий" onclick="next()">
+			</div>
+				
+			</div>
+
+
+	<script type="text/javascript">
+
+		function prev(){
+	let preve=document.getElementById('carusel_01');
+	let next=document.getElementById('carusel_02');
+	preve.style.display='block';
+	next.style.display='none';
+
+
+
+
+}
+function next(){
+	let preve=document.getElementById('carusel_01');
+	let next=document.getElementById('carusel_02');
+	next.style.display='block';
+	preve.style.display='none'
+}
+
+
+
+	</script>
+		
+
+
+</body>
+</html>
