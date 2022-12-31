@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	
+	<input type="text" value="" id="hello">
+	<input type="text" value="" id='bay'>
+
+	<input type="button" value="click me" onclick="clic()">
+
+
+	<script type="text/javascript">
+
+		
+				
+					
+		function clic(){
+			let hell=document.getElementById('hello');
+			
+			let mat=document.getElementById('bay');
+			mat.value=Math.pow(hell.value,2)
+		
+
+
+		}
+					
+				
+
+
+
+	</script>
+		
+
+
+</body>
+</html>
