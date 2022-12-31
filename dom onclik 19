@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	
+	<input type="text" value="hello" id="hello">
+	<input type="text" value="bay" id='bay'>
+
+	<input type="button" value="click me" onclick="clic()">
+
+
+	<script type="text/javascript">
+
+		
+				
+					
+		function clic(){
+			let hell=document.getElementById('hello');
+			let bay=document.getElementById('bay');
+			let text=bay.value;
+			bay.value=hell.value;
+			hell.value=text;
+			text=bay.value;
+
+
+		}
+					
+				
+
+
+
+	</script>
+		
+
+
+</body>
+</html>
