@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+<h2 class="zzz">Заголовок с классом zzz, не поменяется.</h2>
+<p class="zzz">Абзац с классом zzz.</p>
+<p class="zzz">Абзац с классом zzz.</p>
+<p>Просто абзац, не поменяется.</p>
+<button onclick="bnt()">click me</button>
+
+	<script type="text/javascript">
+
+		function bnt(){
+			let elem=document.querySelectorAll('p.zzz');
+			for(let i=0; i<elem.length; i++){
+				elem[i].innerHTML=i+1;
+			}
+		}
+
+	</script>
+		
+
+
+</body>
+</html>
