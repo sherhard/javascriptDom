@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+
+<h1>не поменяеться </h1>
+<p class="zzz">поменять на 1</p>
+<p class="zzz">поменять на 2</p>
+<p class="zzz">поменять на 3</p>
+<button onclick="bnt()">click me</button>
+
+	<script type="text/javascript">
+
+		function bnt(){
+			let elem=document.getElementsByClassName('zzz');
+			for(let i=0; i<elem.length; i++){
+				elem[i].innerHTML=i+1;
+			}
+		}
+
+	</script>
+		
+
+
+</body>
+</html>
