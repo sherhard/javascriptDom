@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+
+
+	<h1>главы</h1>
+	<p>поменять на 1</p>
+	<p>поменять на 2</p>
+	<p>поменять на 3</p>
+	<input type="button" onclick="perp()" value='кнопка'>
+
+	<script type="text/javascript">
+		function perp(){
+			let elem=document.getElementsByTagName('p');
+			elem[0].innerHTML='1';
+			elem[1].innerHTML='2';
+			elem[2].innerHTML='3';
+		}
+
+	</script>
+  
+	<script type="text/javascript">
+		function perp(){
+			let elem=document.getElementsByTagName('p');
+			for(let i=0; i<elem.length; i++){
+				elem[i].innerHTML=i+1;
+			}
+		}
+
+	</script>
+		
+
+
+</body>
+</html>
