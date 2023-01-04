@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+		
+		<p id="elem">поменять на h3</p>
+		<input type="button" onclick="btn()" value="нажми на меня">
+
+	<script type="text/javascript">
+
+		function btn(){
+			let elem=document.getElementById('elem');
+			elem.outerHTML='<h3>поменял на h3 </h3>'
+		}
+		
+		
+
+	</script>
+		
+
+
+</body>
+</html>
