@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+		
+<h2 class="www">Заголовок с классом www, не поменяется.</h2>
+<p class="www">Абзац с классом www.</p>
+<p class="www">Абзац с классом www.</p>
+<p class="www">Абзац с классом www.</p>
+<p>Просто абзац, не поменяется.</p>
+
+		<button onclick="btn()">click me</button>
+
+	<script type="text/javascript">
+
+		function btn(){
+			let elem=document.querySelectorAll('p.www');
+				for(let i=0; i<elem.length; i++){
+					elem[i].innerHTML='куук кук ук';
+				}
+		}
+		
+
+	</script>
+		
+
+
+</body>
+</html>
