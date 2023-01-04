@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+		
+		<input type="text" id='elem' value="">+<input type="text" id='elem2' value="">=<p id='res'></p><br>
+		<button onclick="btn()">вычисление</button>
+
+	<script type="text/javascript">
+
+		function btn(){
+			let elem=document.getElementById('elem');
+			let elem2=document.getElementById('elem2');
+			let res=document.getElementById('res');
+			res.innerHTML=Number(elem.value)+Number(elem2.value);
+
+		}
+		
+		
+
+	</script>
+		
+
+
+</body>
+</html>
