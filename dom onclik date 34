@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+		<input type="button" value="день" onclick="days()">
+		<p id="day"></p>
+			
+	<script type="text/javascript">
+		
+		function days(){
+			let day=document.getElementById('day');
+			let days=new Date();
+			day.innerHTML=(days.getDate()+'-'+days.getMonth()+'-'+days.getFullYear());
+				
+		}
+	
+		
+
+	</script>
+		
+
+
+</body>
+</html>
