@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		img{
+			width: 300px;
+		}
+	</style>
+</head>
+<body >
+
+
+	
+		
+		<p id='tim'>10</p>
+		<input type="button" value="onclick" onclick="btn()">
+		<input type="submit" value="stops" onclick="stop()">
+
+			
+	<script type="text/javascript">
+		function btn(){
+			window.timerId=window.setInterval(timer,1000);
+			document.getElementById('tim').disabled=true;
+		}
+		function stop(){
+			window.clearInterval(window.timerId)
+		}
+		function timer(){
+			let tim=document.getElementById('tim');
+			let num=parseInt(tim.innerHTML)-1;
+			tim.innerHTML=num;
+			if(num==0){
+				stop();
+			
+			}
+		}
+	
+
+	</script>
+		
+
+
+</body>
+</html>
