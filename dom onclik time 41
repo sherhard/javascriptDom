@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		img{
+			width: 300px;
+		}
+	</style>
+</head>
+<body >
+
+		<img src="clients/01.png" alt="" id='slider1'>
+			<img src="clients/02.png" alt="" id='slider2'>
+			<img src="clients/03.png" alt="" id='slider3'>
+			<img src="clients/04.png" alt="" id='slider4'>
+			<img src="clients/05.png" alt="" id='slider5'>
+	<input type="button" value="onclik" onclick="slider()">
+	<input type="button" value="stop" onclick="stop()">
+
+			
+	<script type="text/javascript">
+	function slider(){
+	window.timerId=window.setInterval(timer ,1000);
+
+}
+ 	function stop(){
+ 		window.clearInterval(window.timerId)
+ 	}
+
+
+function timer(){
+	let slider1=document.getElementById('slider1');
+	let slider2=document.getElementById('slider2');
+	let slider3=document.getElementById('slider3');
+	let slider4=document.getElementById('slider4');
+	let slider5=document.getElementById('slider5');
+	let tmp=slider1.src;
+	slider1.src=slider2.src;
+	slider2.src=slider3.src;
+	slider3.src=slider4.src;
+	slider4.src=slider5.src;
+	slider5.src=tmp;
+}
+
+	</script>
+		
+
+
+</body>
+</html>
