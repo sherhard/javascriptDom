@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		img{
+			width: 300px;
+		}
+	</style>
+</head>
+<body onload="go()">
+
+	<img src="970x647/1.jpg" alt="" id="img">
+	
+		
+			
+	<script type="text/javascript">
+		
+		function go(){
+			window.timerId = window.setInterval(timer, 1000);
+		}
+		function timer(){
+			if(window.number == undefined || window.number == 3) {//картинки от 1 до 10
+				window.number = 1;
+			} else window.number = window.number + 1;
+			var img = document.getElementById('img');
+			img.src = 'carusel/'+window.number+'.jpg'
+		}
+	
+
+	</script>
+		
+
+
+</body>
+</html>
