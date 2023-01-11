@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		img{
+			width: 300px;
+		}
+	</style>
+</head>
+<body >
+
+		<img src="clients/01.png" alt="" id='slider'>
+			<img src="clients/02.png" alt="" id='slider'>
+			<img src="clients/03.png" alt="" id='slider'>
+			<img src="clients/04.png" alt="" id='slider'>
+			<img src="clients/05.png" alt="" id='slider'>
+			
+	
+
+			
+	<script type="text/javascript">
+		
+		
+			let elem=document.getElementsByTagName('img');
+			for(let i=0; i<elem.length; i++){
+
+			elem[i].onclick=fun;
+				
+
+			}
+			function fun(){
+				alert(this.getAttribute('src'));
+			}
+		
+
+	</script>
+		
+
+
+</body>
+</html>
