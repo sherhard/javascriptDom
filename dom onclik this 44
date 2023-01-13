@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		
+	</style>
+</head>
+<body >
+
+		<a href="#">html</a>
+		<a href="#">css</a>
+		<a href="#">js</a>
+
+			
+	<script type="text/javascript">
+	
+
+let elem =document.getElementsByTagName('a');
+for(let i=0; i<elem.length; i++){
+	elem[i].addEventListener('mouseover', func)
+
+	
+}
+function func(){
+	this.innerHTML = this.innerHTML + ' (' + this.href + ')';
+}
+
+</script>
+		
+
+
+</body>
+</html>
