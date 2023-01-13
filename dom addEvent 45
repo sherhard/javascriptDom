@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		
+	</style>
+</head>
+<body >
+
+	<a href="http://ya.ru" title="">Текст первой ссылки</a>
+<a href="http://tut.by" title="">Текст второй ссылки</a>
+<a href="http://google.com" title="">Текст третьей ссылки</a>
+
+			
+	<script type="text/javascript">
+	
+
+
+var elems = document.getElementsByTagName('a');
+for (var i = 0; i < elems.length; i++) {
+	elems[i].addEventListener('mouseover', func);
+}
+
+function func() {
+	this.innerHTML = this.innerHTML + ' (' + this.href + ')';
+	this.removeEventListener('mouseover', func);
+}
+
+
+</script>
+		
+
+
+</body>
+</html>
