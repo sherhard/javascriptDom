@@ -1,0 +1,50 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+			div{
+				width: 400px;
+				height: 300px;
+			}
+		</style>
+	</head>
+	<body >
+
+		<div>1</div>
+		<div>2</div>
+
+
+
+
+		<script type="text/javascript">
+			
+			let elems=document.getElementsByTagName('div');
+			for(let i=0; i<elems.length; i++){
+				elems[i].addEventListener('click', func);
+				elems[i].addEventListener('click', func2);
+			}
+
+			function func(){
+					this.style.background='red';
+					this.removeEventListener('click',func);
+
+			} 
+			function func2(){
+				this.style.background="green";
+				this.addEventListener('click',func)
+				
+			}
+			
+
+
+
+
+	</script>
+			
+
+
+	</body>
+	</html>
