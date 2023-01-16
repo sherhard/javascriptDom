@@ -1,0 +1,55 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+			
+		</style>
+	</head>
+	<body >
+
+		<div id="elem">add class in teg </div>
+
+		<input type="button" value="add Class">
+		<input type="button" value="remove class">
+
+		
+
+
+
+
+		<script type="text/javascript">
+
+			let elem=document.getElementsByTagName('input');
+				for(let i=0;i<elem.length; i++){
+					elem[0].addEventListener('click',adds);
+					elem[1].addEventListener('click',removes)
+				}
+				function adds(){
+					let element=document.querySelector('#elem').classList;
+					element.add('newclass');
+				
+
+					
+
+			} 
+							function removes(){
+					let elements=document.querySelector('#elem').classList;
+					elements.remove('newclass');
+				}
+
+
+
+			
+
+
+
+
+	</script>
+			
+
+
+	</body>
+	</html>
