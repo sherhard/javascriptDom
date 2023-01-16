@@ -1,0 +1,44 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+			
+		</style>
+	</head>
+	<body >
+
+		<div id="elem" class="one">add class in teg </div>
+
+		<input type="button" value="add Class">
+
+		
+
+
+
+
+		<script type="text/javascript">
+			let examination=document.getElementsByTagName('input');
+				examination=addEventListener('click' ,fun);
+				function fun(){
+					let elem=document.querySelector('#elem');
+					let exem=elem.classList.length;
+					alert(exem)
+				}
+
+
+
+
+			
+
+
+
+
+	</script>
+			
+
+
+	</body>
+	</html>
