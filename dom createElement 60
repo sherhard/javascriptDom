@@ -1,0 +1,46 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+			
+		</style>
+	</head>
+	<body >
+
+		<ul id="parent">
+			
+		</ul>
+		
+		<div id="text"></div>
+
+		
+
+
+
+
+		<script type="text/javascript">
+
+			let parent=document.getElementById('parent');
+			let arr=['1','2','3','4','5','6','7'];
+			for(let i=0; i<arr.length; i++){
+				let li=document.createElement('li');
+				li.innerHTML=arr[i];
+				parent.appendChild(li)
+			}
+			
+			let text=document.getElementById('text');
+     			parent.addEventListener('click', func);
+				function func(){
+					text.innerHTML=this.innerHTML;
+				}
+			
+
+	</script>
+			
+
+
+	</body>
+	</html>			
