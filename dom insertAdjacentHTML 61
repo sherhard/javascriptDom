@@ -1,0 +1,61 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+			
+		</style>
+	</head>
+	<body >
+
+		<div id="target">
+			<p>first text</p>
+
+		</div>
+		<hr>
+		<p class="addElem">before Begin</p>
+		<p class="addElem">After end</p>
+		<p class="addElem">After Begin</p>
+		<p class="addElem">before End</p>
+
+
+		<script type="text/javascript">
+				
+				let elem=document.querySelector('#target');
+				
+
+				let addElem=document.getElementsByClassName('addElem');
+					
+				for(let i=0; i<addElem.length; i++){
+							addElem[0].addEventListener('click',func);
+							addElem[1].addEventListener('click',func1);
+							addElem[2].addEventListener('click',func2);
+							addElem[3].addEventListener('click',func3);
+				}
+
+				function func(){
+						elem.insertAdjacentHTML('beforeBegin','<div> add new div before Begin</div>')
+					
+				}
+				function func1(){
+						elem.insertAdjacentHTML('afterEnd','<div> add new div afterEnd </div>')
+					
+				}
+				function func2(){
+						elem.insertAdjacentHTML('afterBegin','<div> add new div afterBegin</div>')
+					
+				}
+				function func3(){
+						elem.insertAdjacentHTML('beforeEnd','<div> add new beforeEND</div>')
+					
+				}
+
+					// this.innerHTML=
+	</script>
+			
+
+
+	</body>
+	</html>			
