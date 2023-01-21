@@ -1,0 +1,42 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+			
+		</style>
+	</head>
+	<body >
+
+		<div>
+			<p>1 параграф</p>
+			<p id="text">2 параграф</p>
+			<p id="text1">3 параграф</p>
+		</div>
+		<button onclick="prev()">Previos</button>
+		<button onclick="next()">Next</button>
+		<p id="answer"></p>
+		<p id="answer1"></p>
+
+
+
+		<script type="text/javascript">
+			function prev(){
+				let finde=document.querySelector('#text');
+			let texts=document.querySelector('#answer')
+			texts.innerHTML=finde.previousElementSibling.innerHTML;
+			}
+
+			function next(){
+				let finde=document.querySelector('#text');
+			let texts=document.querySelector('#answer1')
+			texts.innerHTML=finde.nextElementSibling.innerHTML;
+			}
+	</script>
+			
+
+
+	</body>
+	</html>			
