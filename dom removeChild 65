@@ -1,0 +1,67 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+		
+		</style>
+	</head>
+	<body >
+
+		<div id="parent">
+			<p id="children">child</p>
+		</div>
+
+		<button onclick="remove()">removeChild</button>
+
+		<hr>
+
+		<ol id="ol">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+		</ol>
+		<hr>
+		<div>
+		<p>last element and delete</p>
+		<p id="lastelem"></p>
+		</div>
+		<button onclick="lastrem()">last descendant</button>
+		<button onclick="delet()">delete last</button>
+		
+
+		
+
+
+
+		<script type="text/javascript">
+			
+		function remove(){
+			let parent=document.querySelector('#parent');
+			let child=document.querySelector('#children');
+				parent.removeChild(child)
+		}
+
+		function lastrem(){
+			let ol=document.querySelector('#ol');
+			let lastelem=document.querySelector('#lastelem');
+			lastelem.innerHTML=ol.lastElementChild.innerHTML;
+			
+		}
+		function delet(){
+			let del=document.querySelector('#lastelem');
+			del.parentElement.removeChild(del)
+
+		}
+
+
+
+	</script>
+			
+
+
+	</body>
+	</html>			
