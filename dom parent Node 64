@@ -1,0 +1,51 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+		
+		</style>
+	</head>
+	<body >
+
+		<div id="parent">
+			<p id="children">child</p>
+		</div>
+
+		<button onclick="parentElem()">parentEleme</button>
+		<button onclick="parentNodes()">node</button>
+		<p id="answer"></p>
+		<p id="answer1"></p>
+
+		
+
+
+
+		<script type="text/javascript">
+			
+			function parentElem(){
+				let parent=document.querySelector('#children')
+				let answer=parent.parentElement.id;
+
+				let elem=document.querySelector('#answer');
+				elem.style.backgroundColor = "red";
+				elem.innerHTML=answer;
+
+			}
+			function parentNodes(){
+				let parent=document.querySelector('#children')
+				let answer=parent.parentNode.id;
+
+				let elem=document.querySelector('#answer1');
+				elem.style.backgroundColor = "green";
+				elem.innerHTML=answer;
+			}
+
+	</script>
+			
+
+
+	</body>
+	</html>			
