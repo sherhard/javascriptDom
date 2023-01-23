@@ -1,0 +1,40 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+		#elem {
+	width: 100px;
+	height: 100px;
+	border: 10px solid black;
+}
+		</style>
+	</head>
+	<body >
+
+<div id="elem">width and height</div>
+
+<p id="result"></p>
+	
+		
+
+
+
+		<script type="text/javascript">
+
+		let elem=document.querySelector('#elem');
+		let result=document.querySelector('#result');
+			elem.addEventListener('click',func);
+		function func(){
+			result.innerHTML=elem.offsetWidth+' '+elem.offsetHeight;
+
+		}
+
+	</script>
+			
+
+
+	</body>
+	</html>			
