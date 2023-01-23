@@ -1,0 +1,52 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+		#elem {
+	width: 100px;
+	height: 100px;
+	border: 10px solid black;
+}
+		</style>
+	</head>
+	<body >
+
+<div id="elem">width and height
+click me</div>
+<hr>
+<p> offset width and height</p>
+<p id="result"></p>
+<p>client Height and width , no border</p>
+<p id="result2"></p>
+<p>we get , getComputed.styles</p>
+<p id="result3"></p>
+	
+		
+
+
+
+		<script type="text/javascript">
+
+		let elem=document.querySelector('#elem');
+		let result=document.querySelector('#result');
+		let result2=document.querySelector('#result2')
+		let result3=document.querySelector('#result3')
+			elem.addEventListener('click',func);
+		function func(){
+			result.innerHTML=elem.offsetWidth+' '+elem.offsetHeight;
+			result2.innerHTML=elem.clientWidth+' '+elem.clientHeight;
+			let getComp=getComputedStyle(elem);
+			result3.innerHTML='padding'+getComp.paddingLeft+'width'+getComp.width;
+
+
+		}
+
+	</script>
+			
+
+
+	</body>
+	</html>			
