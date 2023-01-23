@@ -1,0 +1,45 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+		#elem {
+	width: 100px;
+	height: 100px;
+	border: 10px solid black;
+}
+		</style>
+	</head>
+	<body >
+
+<div id="elem">boreder</div>
+<button onclick="clien()"> client top</button>
+<button onclick=""></button>
+<p id="result">top border </p>
+<p id="resul2">left bodrer</p>
+
+
+	
+		
+
+
+
+		<script type="text/javascript">
+	
+		function clien(){
+			let elem=document.querySelector('#elem');
+			let resul=document.querySelector('#result');
+			let resul2=document.querySelector('#resul2')
+		 resul.innerHTML=elem.clientTop;
+		 resul2.innerHTML=elem.clientLeft;
+
+		}
+
+	</script>
+			
+
+
+	</body>
+	</html>			
