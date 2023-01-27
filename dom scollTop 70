@@ -1,0 +1,41 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+		#elem {
+	width: 100px;
+	height: 200px;
+	border: 10px solid black;
+}
+		</style>
+	</head>
+	<body >
+		<h1 style="text-align: center">Прокрутка элемента</h1>
+
+		<div id="elem">
+			
+		</div>
+		<input type="button" id="btn" value="button" >
+
+
+
+		<script type="text/javascript">
+
+			let elem=document.querySelector('#elem');
+			let btn=document.getElementById('btn');
+			btn.addEventListener('click',fun);
+
+			function fun(){
+				alert(elem.scrollTop)
+			}
+	
+
+	</script>
+			
+
+
+	</body>
+	</html>			
