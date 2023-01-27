@@ -1,0 +1,49 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Document</title>
+		<style>
+		#elem {
+	width: 450px;
+	height: 100px;
+	overflow-y :scroll ;
+	white-space: nowrap;
+	border: 10px solid black;
+}
+		</style>
+	</head>
+	<body >
+		<h1 style="text-align: center">Прокрутка элемента</h1>
+
+		<div id="elem">
+			Lorem ipsum dolor sit, amet consectetur,
+			<br> adipisicing elit. Sunt, aut!	
+			Lorem ipsum dolor, sit amet consectetur <br>adipisicing, elit. Accusantium sunt commodi soluta<br> aliquid facere non unde <br>sit. Voluptatum ut quas, omnis, itaque<br> temporibus aut quidem <br>molestias fugit voluptas possimus, cum.	<br>
+			<br> adipisicing elit. Sunt, aut!	
+			Lorem ipsum dolor, sit amet consectetur <br>adipisicing, elit. Accusantium sunt commodi soluta<br> aliquid facere non unde <br>sit. Voluptatum ut quas, omnis, itaquetemporibus aut quidem molestias fugit voluptas possimus, cum.	
+		</div>
+		<input type="button" id="btn" value="button" >
+	
+
+
+		<script type="text/javascript">		
+			let elem=document.querySelector('#elem');
+			elem.addEventListener('scroll',fun);
+
+			function fun(){
+				if(elem.scrollLeft===0){
+					elem.style.color='red';
+				}else{
+					elem.style.color='blue';
+				}
+			}
+	
+
+	</script>
+			
+
+
+	</body>
+	</html>			
